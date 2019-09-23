@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>연습문제 1-2</h1>
+        <!-- 나의 답안 -->
+        <!-- <script>
+            var t1 = prompt("몸무게(kg)를 입력해 주세요");
+            var t2 = prompt("키를 미터단위로 입력해 주세요");
+            var weight = Number(t1);
+            var height = Number(t2);
+            console.log(weight/(height*height)*100);
+        </script> -->
+
+        <!-- 코드스쿼드 답안 -->
+        <!-- <script>
+            var s1 = prompt("키을 입력해 주세요. (cm)");
+            var s2 = prompt("체중을 입력해 주세요.(Kg)");
+            var height = Number(s1) / 100;
+            var weight = Number(s2);
+            var bmi = weight / (height * height);
+            document.write("BMI는 "  + bmi +"입니다.");
+        </script> -->
+
+        <!-- <나의 수정답안> -->
+        <script>
+            var t1 = prompt("몸무게(kg)를 입력해 주세요");
+            var t2 = prompt("키(m)를 입력해 주세요");
+            var weight = Number(t1);
+            var height = Number(t2);
+            var bmi = (weight/(height*height))*100;
+            document.write("Rachel의 BMI 수치는" + bmi + "로 저체중 입니다.")
+        </script>
+    </body>
+</html>
