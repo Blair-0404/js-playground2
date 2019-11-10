@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>문자열 계산기 구현하기</h1>
+    <h2>-a와 b에 숫자를 담고 
+        사칙연산이 콘솔에 출력되는 함수를 만들어보자</h2>
+    <h2>-div를 자바스크립트에서 연결받아서
+        실행날짜를 브라우저에 보이도록 작성해보자
+    </h2>
+    <div id="cal"></div>
+    <script>
+        var calcul = document.getElementById("cal");
+        calcul.innerHTML = "20191110Sunday";
+    function calculation(a,b) {
+        console.log("a = " + a + " / b = " + b + "의 사칙연산!")
+        console.log(a + b);
+        console.log(a - b);
+        console.log(a * b);
+        console.log(a / b);
+    }
+    calculation(4,2);
+    calculation(10,5);
+</script>
+</body>
+</html>

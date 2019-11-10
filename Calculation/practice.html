@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>문자열 계산기 구현하기</h1>
+    <div id="area1"></div>
+    <div>
+        number1 : <input type="Number" id="n1"> <br>
+        number2 : <input type="Number" id="n2"> <br>
+        <button onclick="cal()">실행</button>
+    </div>
+    <div id="area2"></div>
+    <script>
+        var page = document.getElementById("area1");
+        var page = document.getElementById("area2");
+        area1.innerHTML = "두 숫자를 입력 후 실행을 누르세요";
+        function cal() {
+        area1.innerHTML = "입력된 두 숫자들에대한 사칙연산이 맞는지 확인하세요.";
+        var n1 = Number(document.getElementById("n1").value);
+        var n2 = Number(document.getElementById("n2").value);
+        var str = "";
+        str += "n1 + n2 = " + (n1 + n2) + "<br>";
+        str += "n1 * n2 = " + (n1 * n2) + "<br>";
+        str += "n1 - n2 = " + (n1 - n2) + "<br>";
+        str += "n1 / n2 = " + (n1 / n2) + "<br>";
+        area2.innerHTML = str;
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>문자열 계산기 구현하기</h1>
+    <div id="area1"></div>
+    <div>
+        number1 : <input type="Number" id="n1"> <br>
+        operator : <input type="text" id="op"> <br>
+        number2 : <input type="Number" id="n2"> <br>
+        <button onclick="cal()">실행</button>
+    </div>
+    <div id="area2"></div>
+    <script>
+        var area1 = document.getElementById("area1");
+        var area2 = document.getElementById("area2");
+        area1.innerHTML = "두 숫자를 입력 후 실행을 누르세요";
+        function cal() {
+        area1.innerHTML = "입력된 두 숫자들에대한 사칙연산이 맞는지 확인하세요.";
+        var n1 = Number(document.getElementById("n1").value);
+        var n2 = Number(document.getElementById("n2").value);
+        var op = document.getElementById("op").value;
+        var result = "";
+        if (op === "+") {
+            result += "더하기 = " + (n1 + n2);
+        }
+        else if (op === "-") {
+            result += "배기 = " + (n1 - n2);
+        }
+        else if (op === "*") {
+            result += "곱하기 = " + (n1 * n2);
+        }
+        else if (op === "/") {
+            result += "나누기 = " + (n1 / n2);
+        }
+        else {result += "사칙연산중 하나를 입력해 주세요"
+        }
+        area2.innerHTML = result;
+        }
+</script>
+</body>
+</html>

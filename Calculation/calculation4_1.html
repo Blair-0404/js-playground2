@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator-rachel</title>
+</head>
+<body>
+    <h1>문자열 계산기 구현하기</h1>
+    <div id="area1"></div>
+    <div id="area2"></div>
+    <script>
+        var area1 = document.getElementById("area1");
+        function cal() {
+        area1.innerHTML = "입력한 숫자들과 사칙연산이 맞게 계산되었는지 확인해 주세요";
+        var n1 = Number(prompt("첫번째 숫자를 입력해 주세요"));
+        var result = n1;
+        var n2;
+        var op;
+        var n = 2;
+        while(true) {
+            op = prompt("연산자를 입력해 주세요.");
+            if (op === "q") {
+                break;
+            }
+            n2 = Number(prompt(n + "번째 숫자를 입력해 주세요."));
+            if (op === "+") {
+                result += n2;
+            } else if (op === "-") {
+                result += n2;
+            } else if (op === "*") {
+                result += n2;
+            } else if (op === "/") {
+                result += n2;
+            } else {
+                result = "오류입니다 = 알림창의 요구사항에 맞게 입력해주세요"
+            }
+            n++;
+        }
+        area2.innerHTML = "최종 결과값은 " + result + "입니다.";
+        }
+        cal();
+</script>
+</body>
+</html>
