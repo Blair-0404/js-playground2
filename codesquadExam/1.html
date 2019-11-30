@@ -28,27 +28,31 @@
             ball : 0,
             out : 0
         }
-        baseball.init = function() {
-            // var init = document.getElementById('start');
+
+        baseball.init = function () {
             init.innerHTML = "첫 번째 타자가 타석에 입장했습니다.";
         }
+
         baseball.getrandomValue = function () {
-            // var choice = document.getElementById('choice');
             var mix = Math.floor(Math.random() * this.array.length);
             this.answer = this.array[mix];
             choice.innerHTML = this.answer;
             while(true) {
                 if (this.answer == this.array[0]) {
-                    return this.score.strike++ + "S";
+                    return sign.innerHTML = ++this.score.strike + "S";
                 } else if (this.answer == this.array[1]) {
-                    return this.score.ball++ + "B";
+                    return sign.innerHTML = ++this.score.ball + "B";
                 } else if (this.answer == this.array[3]) {
-                    return this.score.out++ + "O";
+                    return sign.innerHTML = ++this.score.out + "O";
                 }
             }
-            // var sign = document.getElementById('sign');
-            sign.innerHTML = this.score;
         }
+        
+        baseball.calculateScore = function() {
+            
+        }
+
+        
     </script>
 </body>
 </html>
